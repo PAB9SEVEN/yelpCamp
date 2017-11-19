@@ -1,7 +1,7 @@
 var express=require('express');
 var exphbs=require('express-handlebars');
 var path=require('path');
-var port=8000;
+//var port=8000;
 var campground=require('./models/campground');
 var bodyParser=require('body-parser');
 var Comment=require('./models/comment');
@@ -70,8 +70,9 @@ app.use(authroutes);
 app.use(campgroundroutes);
 app.use(commentroutes);
 
+app.set('port',process.env.PORT||8000);
 
-app.listen(port,function(){
-   console.log('server started') ;
+app.listen(app.get('port'),function(){
+   console.log('server started on '+app.get('port'));
     
 });
