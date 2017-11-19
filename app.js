@@ -14,7 +14,9 @@ var flash=require('connect-flash');
 //var user=require('./models/user');
 var seedDB=require('./seed');
 var mongoose=require('mongoose');
-mongoose.connect('mongodb://localhost/yelpcamp');
+//mongoose.connect('mongodb://localhost/yelpcamp');
+mongoose.connect('mongodb://preeti:rusty@ds157799.mlab.com:57799/yelpcampdb');
+//mongodb://preeti:rusty@ds157799.mlab.com:57799/yelpcampdb
 //seedDB();
 //passport configuration
 var app=express();
