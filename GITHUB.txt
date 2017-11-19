@@ -1,0 +1,42 @@
+.git folder is tnecessary folder in you repo it tracks all the changes u have made 
+
+git is basically a technology to mind all your change done into your repo or the prject inorder to find the 
+status of your project
+
+==git init 
+this will let git to keep eye on your repo to look aftre the changes 
+==git status-->
+untracked files==
+like you can hde your secrets file from git hub and rest code can we tracked by git but some files or folder u can hide 
+it from github 
+==git add
+thi adds the files to github  to be tracked by your github
+
+==git commit -m "<message regarding git commit>"
+-m==>message comit
+if u didnot staged it for commit means u didnot add the file so basically you need to add it first and then stages
+it for the commit part
+
+
+
+==git log
+this is used to check the logs that is all the commits and changes u have made in the history
+--------------------------------------------------------------------------------
+==git checkout
+to check th details abt all the commits you have made 
+--------------------------------------------------------------------------------
+in order to revert the changes or the commits u have made into the file then follow this command 
+git revert --no-commit <git commit id>..HEAD
+THEN TYPE GIT STATUS TO CHECK THE STATUS 
+AND IT TELLS U ABOUT THE CHANGE MADE IN DFF FILES AND THEN MAKE A COMMIT TO ADD INTO THE LOGS 
+FILES ARE ALREDY ADDED YOU DIRECTLY NEED TO MAKE A COMMIT 
+--------------------------------------------------------------------------------------------
+even on deleting the files the commit related to that file is still present and hence tou cn revert back 
+and get tht file again into the repository
+<<<<<<<<<<<<------------------------STACK OVERFLOW--------------->>>>>>>>>>>>>>>>>>
+
+exports DATABASEURL is used to set the env variable to the application locally
+process.env.DATABASEURL==>usee to set the heroku enviornment variable
+heroku config:set DATABASEURL=<<VALUE>> used to set env variable using command line or using the dashboard of heroku in settings
+mongoose.connect(process.env.DATABASEURL) hides the database url and hence hides it from the developer too
+var url=process.env.DATABASEURL || mongodb://localhost//yelpcamp
