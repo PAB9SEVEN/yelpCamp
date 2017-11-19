@@ -50,7 +50,7 @@ app.use(function(req,res,next){
     
     next();
 });
-
+console.log(process.env.DATABASEURL);
 //setting up the schema
 
 /*
